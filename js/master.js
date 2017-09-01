@@ -6,13 +6,22 @@ var changeSize = function(width){
   $('.workStuffBig').css('height',width+width);
 }
 
+$w = $('.workStuff').width();
+ready = true;
+changeSize($w);
+
+
+
+
+
 $( document ).ready(function() {
+
+
 
   $(document).scroll(function() {
       $work = $('#workSection').offset().top;
       $doc = $(document).scrollTop();
 
-      console.log($work - $doc);
       if(($work - $doc) <= 650){
         $('#1').stop().fadeOut();
         $('#2').stop().fadeOut();
@@ -20,7 +29,6 @@ $( document ).ready(function() {
       }else{
         $('#1').stop().fadeIn();
         $('#2').stop().fadeIn();
-
       }
 
       if($(document).scrollTop()>100){
@@ -31,29 +39,38 @@ $( document ).ready(function() {
   })
 
   $("#home").click(function (){
+    closeNav();
         $('html, body').animate({
             scrollTop: $("#landingSection").offset().top
         }, 500);
     });
 
     $("#work").click(function (){
+      closeNav();
           $('html, body').animate({
+
               scrollTop: $("#workSection").offset().top
           }, 500);
       });
       $("#about").click(function (){
+        closeNav();
             $('html, body').animate({
+
                 scrollTop: $("#aboutSection").offset().top
             }, 500);
         });
         $("#skills").click(function (){
+          closeNav();
               $('html, body').animate({
+
                   scrollTop: $("#aboutSection").offset().top
               }, 500);
           });
 
           $("#contact").click(function (){
+            closeNav();
                 $('html, body').animate({
+
                     scrollTop: $("#contactSection").offset().top
                 }, 500);
             });
