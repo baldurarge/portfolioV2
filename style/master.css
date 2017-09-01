@@ -1,0 +1,620 @@
+@font-face {
+    font-family: 'muliLight';
+    src: url('../fonts/Muli/muli-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/Muli/muli-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'muliRegular';
+    src: url('../fonts/Muli/muli-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Muli/muli-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'megrim';
+    src: url('../fonts/Megrim/megrim-webfont.woff2') format('woff2'),
+         url('../fonts/Megrim/megrim-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'comfortaLight';
+    src: url('../fonts/Comfortaa/comfortaa-light-webfont.woff2') format('woff2'),
+         url('../fonts/Comfortaa/comfortaa-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaRegular';
+    src: url('../fonts/Comfortaa/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Comfortaa/comfortaa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+html{
+  font-size: 1.5em;
+}
+
+html,body{
+  width: 100%;
+}
+
+main{
+  background: #f5f5f5;
+  position: relative;
+}
+
+/* ------------------------------------------------------------ NAV START--------------------------------*/
+
+nav{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 11;
+  transition:background 0.5s ease;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 30px;
+}
+
+.navLink{
+  font-family: muliLight;
+  margin-right: 50px;
+}
+
+.brand{
+  font-family: megrim !important;
+  margin-right: auto;
+}
+.brand a{
+  font-size: 80px;
+
+}
+
+.navScroll{
+  background: rgba(77, 96, 110,0.8);
+  transform-origin:top;
+  transition:background 0.5s ease;
+}
+
+.navScroll::after{
+ width: 100%;
+}
+
+/* ------------------------------------------------------------ FIRST SECTION START--------------------------------*/
+
+.landingSection{
+  width: 100%;
+  height: 95vh;
+  color: #f5f5f5;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.landingSection h1{
+  font-family: comfortaRegular;
+  font-size: 3.5em;
+
+}
+
+.landingSection h2{
+  font-family: muliLight;
+  font-size: 2em;
+
+}
+
+.socialIcons1{
+  display: flex;
+  flex-flow: row;
+  justify-content:space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.socialIcons1 a img{
+  height: 30px;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../img/background.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.goToWork{
+  position: absolute;
+  bottom: 200px;
+  font-family: muliLight;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-downs {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 30px;
+
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+
+/* ------------------------------------------------------------ WORK SECTION START--------------------------------*/
+.workSection{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  z-index: 2;
+}
+
+.left,.middle,.right{
+  background: red;
+  width: 33.333%;
+  flex-flow: column;
+}
+
+.frodo{
+  height: 350px;
+  background: #64a2d7;
+}
+
+.webco{
+  height: 350px;
+  background: #ff9a44;
+}
+
+.ashestar{
+  height: 350px;
+  background: #f2d653;
+}
+
+.kerteminde{
+  height: 350px;
+  background: #4d606e;
+}
+
+.chat{
+  height: 700px;
+  background: #aa9ce5;
+}
+
+.workStuff{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.workStuff:hover{
+  cursor: pointer;
+}
+
+.overlay{
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+
+}
+
+.overlayFrodo{
+  background: rgba(243, 129, 129, 0.95);
+
+}
+
+.overlayWebco{
+  background: rgba(162, 213, 242, 0.95);
+
+}
+
+.overlayAshestar{
+  background: rgba(102, 57, 166, 0.95);
+
+}
+
+.overlayKert{
+  background: rgba(245, 245, 245, 0.95);
+}
+
+.overlayKert section{
+  color: #4d606e;
+}
+
+
+.overlay section{
+  color: transparent;
+}
+
+.overlay section h4{
+  font-family: comfortaLight;
+  font-size: 40px;
+}
+
+.overlay section span{
+  font-family: muliLight;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.workStuff figure{
+  height: 80%;
+}
+
+.webco figure{
+  width: 60%;
+  height: 50%;
+}
+
+.webco img{
+  width: 100%;
+}
+
+.workStuff img{
+  height: 100%;
+}
+
+.workStuff:hover .overlay{
+  height: 100%;
+  transition: height 0.6s ease;
+}
+
+.workStuff:hover .overlay section{
+  color: #f5f5f5;
+  transition: color 1s ease;
+}
+
+.workStuff:hover .overlayKert section{
+  color: #4d606e;
+}
+
+
+
+.workStuffBig{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.workStuffBig figure{
+  height: 80%;
+}
+
+.workStuffBig img{
+  height: 100%;
+}
+
+
+/* ------------------------------------------------------------ ABOUT SECTION START--------------------------------*/
+
+.about{
+  background: #f5f5f5;
+  padding-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.about .content{
+  display: flex;
+  flex-direction: row;
+}
+
+.about h1{
+  font-family: comfortaLight;
+  font-size: 45px;
+}
+
+.about p{
+  font-family: muliLight;
+}
+
+.aboutText, .aboutImage{
+  width: 50%;
+  position: relative;
+}
+
+.aboutImage figure{
+  position: absolute;
+  bottom: -100px;
+}
+
+.aboutText{
+  padding-left: 10%;
+}
+
+.aboutImage figure{
+  width: 100%;
+}
+
+.aboutImage img{
+  width: 60%;
+  margin-left: 50px;
+}
+
+#iCreate{
+  margin-left: 12px;
+}
+
+.animationSection{
+  display: flex;
+  flex-flow: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.animationSection h1{
+  font-size: 30px;
+}
+
+.slanted{
+  background: #f5f5f5;
+  position: relative;
+  z-index: 2;
+}
+.insideSlanted{
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  height: 100px;
+  width: 100%;
+  background: #4d606e;
+}
+
+.aboutImage .links{
+  float: right;
+  padding-right: 50px;
+  display: flex;
+  flex-flow: column-reverse;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding: 0.4em 1.5em;
+  background: none;
+  color: #4d606e;
+  font-family: muliLight;
+  position: relative;
+  transition:color 0.25s ease;
+  border:1px solid #3fbac2;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color:#f5f5f5;
+}
+
+.btn::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #3fbac2;
+  transform-origin:left;
+  transition:width 0.25s ease;
+  z-index:-1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ Footer SECTION START--------------------------------*/
+footer{
+  background: #4d606e;
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+}
+
+footer h4{
+  font-family: muliLight;
+  color: #f5f5f5;
+}
+
+footer a{
+  font-family: comfortaLight;
+  color: #3fbac2;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.socialIcons2{
+  display: flex;
+  flex-flow: row;
+  justify-content:space-around;
+  padding-left: 35%;
+  padding-right: 35%;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.socialIcons2 a img{
+  height: 30px;
+}
+
+.email{
+  margin-top: 50px;
+  display: block;
+}
+
+
+
+
+/* ------------------------------------------------------------ END SECTION START--------------------------------*/
+
+
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 5200px) {
+
+    }
+
+    @media only screen and (max-width : 1200px) {
+      .goToWork{
+        bottom: 50px;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+
+
+      video {
+        display: none;
+      }
+
+      .landingSection{
+        background-image: url('../img/background.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+
+
+
+
+      .workSection{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+      }
+      .left,.middle,.right{
+        background: red;
+        width: 100%;
+        flex-flow: column;
+      }
+
+      .aboutText{
+        width: 100%;
+        position: relative;
+        padding-bottom: 100px;
+        padding-right: 10%;
+      }
+      .aboutImage{
+        display: none;
+
+      }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
