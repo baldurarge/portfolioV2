@@ -75,6 +75,39 @@ $( document ).ready(function() {
                 }, 500);
             });
 
+
+
+
+            $("#work2").click(function (){
+              closeNav();
+                  $('html, body').animate({
+
+                      scrollTop: $("#workSection").offset().top
+                  }, 500);
+              });
+              $("#about2").click(function (){
+                closeNav();
+                    $('html, body').animate({
+
+                        scrollTop: $("#aboutSection").offset().top
+                    }, 500);
+                });
+                $("#skills2").click(function (){
+                  closeNav();
+                      $('html, body').animate({
+
+                          scrollTop: $("#aboutSection").offset().top
+                      }, 500);
+                  });
+
+                  $("#contact2").click(function (){
+                    closeNav();
+                        $('html, body').animate({
+
+                            scrollTop: $("#contactSection").offset().top
+                        }, 500);
+                    });
+
   $(function(){
         $("#iCreate").typed({
             strings: [" create web and mobile applications."," design web and mobile applications."," create visual identity and motion graphics."," create photography and print media."],
