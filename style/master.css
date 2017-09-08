@@ -1,31 +1,41 @@
-*{
-  box-sizing: border-box;
-  margin: 0px;
+.navLink,
+.overlay2 a {
+    font-family: Muli, sans-serif
 }
 
-.text-center{
-  text-align: center;
+.overlay-content,
+.text-center {
+    text-align: center
 }
 
-html{
-  font-size: 1.5em;
+.bigNav ul li a .smallNav ul li a,
+.btn,
+.nav,
+.overlay2 a,
+footer a,
+nav ul li a {
+    text-decoration: none
 }
 
-html,body{
-  width: 100%;
-  overflow-x: hidden;
+* {
+    box-sizing: border-box;
+    margin: 0
 }
 
-main{
-  background: #f5f5f5;
-  position: relative;
+html {
+    font-size: 1.5em
 }
 
+body,
+html {
+    width: 100%;
+    overflow-x: hidden
+}
 
-
-
-
-
+main {
+    background: #f5f5f5;
+    position: relative
+}
 
 .overlay2 {
     height: 0%;
@@ -34,178 +44,172 @@ main{
     z-index: 20;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.98);
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .98);
     overflow-y: hidden;
-    transition: 0.5s;
+    transition: .5s
 }
 
 .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .overlay2 a {
     padding: 8px;
-    text-decoration: none;
     font-size: 36px;
     color: #f5f5f5;
     display: block;
-    transition: 0.3s;
-    font-family: 'Muli', sans-serif;
-
+    transition: .3s
 }
 
-.overlay2 a:hover, .overlay a:focus {
-    color: #f1f1f1;
+.bigNav,
+.navScroll,
+.smallNav {
+    transition: background .5s ease
+}
+
+.overlay a:focus,
+.overlay2 a:hover {
+    color: #f1f1f1
 }
 
 .overlay2 .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 60px
 }
 
-@media screen and (max-height: 450px) {
-  .overlay2 {overflow-y: auto;}
-  .overlay2 a {font-size: 20px}
-  .overlay2 .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+@media screen and (max-height:450px) {
+    .overlay2 {
+        overflow-y: auto
+    }
+    .overlay2 a {
+        font-size: 20px
+    }
+    .overlay2 .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px
+    }
 }
 
-
-
-
-/* ------------------------------------------------------------ NAV START--------------------------------*/
-
-.xLink{
-  color: #f5f5f5 !important;
+.xLink {
+    color: #f5f5f5!important
 }
 
-.sideNav{
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top:0;
-  left: 100vw;
-  background: red;
-  z-index: 100;
+.sideNav {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 100vw;
+    background: red;
+    z-index: 100
 }
 
-
-.bigNav, .smallNav{
-  position: fixed;
-  top:0px;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  z-index: 11;
-  transition:background 0.5s ease;
+.bigNav,
+.smallNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 11
 }
 
-.bigNav ul, .smallNav ul{
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items:center;
+.bigNav ul,
+.smallNav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center
 }
 
-.bigNav ul li a .smallNav ul li a{
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 30px;
+.bigNav ul li a .smallNav ul li a {
+    color: #f5f5f5;
+    font-size: 30px
 }
 
-nav ul li a{
-  text-decoration: none;
-
-}
-
-.fa-bars{
-  font-size: 50px !important;
+.fa-bars {
+    font-size: 50px!important
 }
 
 .nav {
-  color:#f5f5f5 !important;
-  text-decoration: none;
+    color: #f5f5f5!important
 }
 
-.bigNav ul li a:visited, .smallNav ul li a:visited {
-  color:#f5f5f5;
-  text-decoration: none;
+.bigNav ul li a:visited,
+.smallNav ul li a:visited {
+    color: #f5f5f5;
+    text-decoration: none
 }
 
-.navLink{
-  font-family: 'Muli', sans-serif;
-  margin-right: 50px;
+.navLink {
+    margin-right: 50px
 }
 
-.brand{
-  font-family: 'Megrim', cursive !important;
-  margin-right: auto;
+.brand {
+    font-family: Megrim, cursive!important;
+    margin-right: auto
 }
 
-.brand a{
-  font-size: 70px !important;
-
+.brand a {
+    font-size: 70px!important
 }
 
-.navScroll{
-  background: rgba(77, 96, 110,0.8);
-  transform-origin:top;
-  transition:background 0.5s ease;
+.navScroll {
+    background: rgba(77, 96, 110, .8);
+    transform-origin: top
 }
 
-.navScroll::after{
- width: 100%;
+.navScroll::after {
+    width: 100%
 }
 
-/* ------------------------------------------------------------ FIRST SECTION START--------------------------------*/
-
-.landingSection{
-  width: 100%;
-  height: 95vh;
-  color: #f5f5f5;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-.landingSection h1{
-  font-family: 'Comfortaa', cursive;
-  font-weight: 400;
-  font-size: 3.5em;
-
+.landingSection {
+    width: 100%;
+    height: 95vh;
+    color: #f5f5f5;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2
 }
 
-.landingSection h2{
-  font-family: 'Muli', sans-serif;
-  font-size: 2em;
-
+.landingSection h1 {
+    font-family: Comfortaa, cursive;
+    font-weight: 400;
+    font-size: 3.5em
 }
 
-.socialIcons1{
-  display: flex;
-  flex-flow: row;
-  justify-content:space-between;
-  padding-left: 15%;
-  padding-right: 15%;
-  align-items: center;
-  padding-top: 30px;
+.goToWork,
+.landingSection h2 {
+    font-family: Muli, sans-serif
 }
 
-.socialIcons1 a img{
-  height: 30px;
+.landingSection h2 {
+    font-size: 2em
+}
+
+.socialIcons1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    padding-top: 30px
+}
+
+.socialIcons1 a img {
+    height: 30px
 }
 
 video {
@@ -218,489 +222,560 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('../img/background.jpg') no-repeat;
+    background: url(../img/background-min.jpg) no-repeat;
     background-size: cover;
-    transition: 1s opacity;
+    transition: 1s opacity
 }
 
-.goToWork{
-  position: absolute;
-  bottom: 200px;
-  font-family: 'Muli', sans-serif;
-  display: flex;
-  flex-direction: column;
+.goToWork {
+    position: absolute;
+    bottom: 200px;
+    display: flex;
+    flex-direction: column
 }
 
 .scroll-downs {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  margin-top: 30px;
-
-  width :34px;
-  height: 55px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 30px auto auto;
+    width: 34px;
+    height: 55px
 }
+
 .mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: .75;
+    box-sizing: content-box
 }
+
 .scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite
 }
+
+.ashestar,
+.frodo,
+.kerteminde,
+.webco {
+    height: 350px
+}
+
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+    0% {
+        opacity: 0
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0
+    }
 }
 
-
-/* ------------------------------------------------------------ WORK SECTION START--------------------------------*/
-.workSection{
-  width: 100%;
-  display: flex;
-  flex-flow: row;
-  position: relative;
-  z-index: 2;
+.workSection {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    z-index: 2
 }
 
-.left,.middle,.right{
-  background: red;
-  width: 33.333%;
-  flex-flow: column;
+.left,
+.middle,
+.right {
+    background: red;
+    width: 33.333%;
+    flex-flow: column
 }
 
-.frodo{
-  height: 350px;
-  background: #64a2d7;
+.overlay,
+.workStuff {
+    justify-content: center;
+    display: flex
 }
 
-.webco{
-  height: 350px;
-  background: #ff9a44;
+.frodo {
+    background: #64a2d7
 }
 
-.ashestar{
-  height: 350px;
-  background: #f2d653;
+.webco {
+    background: #ff9a44
 }
 
-.kerteminde{
-  height: 350px;
-  background: #4d606e;
+.ashestar {
+    background: #f2d653
 }
 
-.chat{
-  height: 700px;
-  background: #aa9ce5;
+.kerteminde {
+    background: #4d606e
 }
 
-.workStuff{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.chat {
+    height: 700px;
+    background: #aa9ce5
 }
 
-.workStuff:hover, .workStuffBig:hover{
-  cursor: pointer;
+.workStuff {
+    align-items: center;
+    position: relative
 }
 
-.overlay{
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: height 0.2s ease;
-
+.workStuff:hover,
+.workStuffBig:hover {
+    cursor: pointer
 }
 
-.overlayFrodo{
-  background: rgba(243, 129, 129, 0.95);
-
+.overlay {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    align-items: center;
+    transition: height .2s ease
 }
 
-.overlayWebco{
-  background: rgba(162, 213, 242, 0.95);
-
+.overlayFrodo {
+    background: rgba(243, 129, 129, .95)
 }
 
-.overlayAshestar{
-  background: rgba(102, 57, 166, 0.95);
-
+.overlayWebco {
+    background: rgba(162, 213, 242, .95)
 }
 
-.overlayKert{
-  background: rgba(245, 245, 245, 0.95);
+.overlayAshestar {
+    background: rgba(102, 57, 166, .95)
 }
 
-.overlayChat{
-  background: rgba(245, 245, 245, 0.95);
+.overlayChat,
+.overlayKert {
+    background: rgba(245, 245, 245, .95)
 }
 
-.overlayKert section{
-  color: #4d606e;
+.about,
+.slanted {
+    background: #f5f5f5;
+    z-index: 2
 }
 
-
-.overlay section{
-  color: transparent;
+.overlayKert section {
+    color: #4d606e
 }
 
-.overlay section h4{
-  font-family: 'Comfortaa', cursive;
-  font-weight: 300;
-  font-size: 40px;
+.overlay section {
+    color: transparent
 }
 
-.overlay section span{
-  font-family: 'Muli', sans-serif;
-  font-size: 20px;
-  margin-top: 20px;
+.overlay section h4 {
+    font-family: Comfortaa, cursive;
+    font-weight: 300;
+    font-size: 40px
 }
 
-.workStuff figure{
-  height: 80%;
+.overlay section span {
+    font-family: Muli, sans-serif;
+    font-size: 20px;
+    margin-top: 20px
 }
 
-.webco figure{
-  width: 60%;
-  height: 50%;
+.workStuff figure {
+    height: 80%
 }
 
-.webco img{
-  width: 100%;
+.webco figure {
+    width: 60%;
+    height: 50%
 }
 
-.workStuff img{
-  height: 100%;
+.webco img {
+    width: 100%
 }
 
-.workStuff:hover .overlay, .workStuffBig:hover .overlay{
-  height: 100%;
-  transition: height 0.6s ease;
+.workStuff img {
+    height: 100%
 }
 
-.workStuff:hover .overlay section, .workStuffBig:hover .overlay section{
-  color: #f5f5f5;
-  transition: color 1s ease;
+.workStuff:hover .overlay,
+.workStuffBig:hover .overlay {
+    height: 100%;
+    transition: height .6s ease
 }
 
-.workStuff:hover .overlayKert section, .workStuffBig:hover .overlayChat section{
-  color: #4d606e;
+.workStuff:hover .overlay section,
+.workStuffBig:hover .overlay section {
+    color: #f5f5f5;
+    transition: color 1s ease
 }
 
-
-
-.workStuffBig{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.btn,
+.workStuff:hover .overlayKert section,
+.workStuffBig:hover .overlayChat section {
+    color: #4d606e
 }
 
-
-.workStuffBig figure{
-  height: 80%;
+.workStuffBig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
 }
 
-.workStuffBig img{
-  height: 100%;
+.workStuffBig figure {
+    height: 80%
 }
 
-
-/* ------------------------------------------------------------ ABOUT SECTION START--------------------------------*/
-
-.about{
-  background: #f5f5f5;
-  padding-top: 100px;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 100px;
+.workStuffBig img {
+    height: 100%
 }
 
-.about .content{
-  display: flex;
-  flex-direction: row;
+.about {
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 100px
 }
 
-.about h1{
-  font-family: 'Comfortaa', cursive;
-  font-weight: 300;
-  font-size: 45px;
+.about .content {
+    display: flex;
+    flex-direction: row
 }
 
-.about p{
-  font-family: 'Muli', sans-serif;
+.about h1 {
+    font-family: Comfortaa, cursive;
+    font-weight: 300;
+    font-size: 45px
 }
 
-.aboutText, .aboutImage{
-  width: 50%;
-  position: relative;
+.about p,
+.btn,
+footer h4 {
+    font-family: Muli, sans-serif
 }
 
-.aboutImage figure{
-  position: absolute;
-  bottom: -100px;
+.aboutImage,
+.aboutText {
+    width: 50%;
+    position: relative
 }
 
-.aboutText{
-  padding-left: 10%;
+.aboutImage figure {
+    position: absolute;
+    bottom: -100px;
+    width: 100%
 }
 
-.aboutImage figure{
-  width: 100%;
+.aboutText {
+    padding-left: 10%
 }
 
-.aboutImage img{
-  width: 60%;
-  margin-left: 50px;
+.aboutImage img {
+    width: 60%;
+    margin-left: 50px
 }
 
-#iCreate{
-  margin-left: 12px;
+#iCreate {
+    margin-left: 12px
 }
 
-.animationSection{
-  display: flex;
-  flex-flow: row;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.animationSection {
+    display: flex;
+    flex-flow: row;
+    padding-top: 40px;
+    padding-bottom: 40px
 }
 
-.animationSection h1{
-  font-size: 30px;
+.animationSection h1 {
+    font-size: 30px
 }
 
-.slanted{
-  background: #f5f5f5;
-  position: relative;
-  z-index: 2;
-}
-.insideSlanted{
-  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  height: 100px;
-  width: 100%;
-  background: #4d606e;
-  position: absolute;
-  bottom: -1px;
+.slanted {
+    position: relative
 }
 
-.aboutImage .links{
-  float: right;
-  padding-right: 50px;
-  display: flex;
-  flex-flow: column-reverse;
-  text-align: center;
-  z-index: 10;
-  position: relative;
+.insideSlanted {
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    height: 100px;
+    width: 100%;
+    background: #4d606e;
+    position: absolute;
+    bottom: -1px
+}
+
+.aboutImage .links {
+    float: right;
+    padding-right: 50px;
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    z-index: 10;
+    position: relative
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  text-transform: uppercase;
-  padding: 0.4em 1.5em;
-  background: none;
-  color: #4d606e;
-  font-family: 'Muli', sans-serif;
-  position: relative;
-  transition:color 0.25s ease;
-  border:1px solid #3fbac2;
-  text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: .4em 1.5em;
+    background: 0 0;
+    position: relative;
+    transition: color .25s ease;
+    border: 1px solid #3fbac2
 }
 
-.btn:hover {
-  color:#f5f5f5;
+.btn:hover,
+footer h4 {
+    color: #f5f5f5
 }
 
 .btn::after {
-  position: absolute;
-  content: '';
-  top:0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #3fbac2;
-  transform-origin:left;
-  transition:width 0.25s ease;
-  z-index:-1;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3fbac2;
+    transform-origin: left;
+    transition: width .25s ease;
+    z-index: -1
 }
 
-.btn:hover::after {
-  width: 100%;
+.btn:hover::after,
+.minOver {
+    width: 100%
 }
 
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------ Footer SECTION START--------------------------------*/
-footer{
-  background: #4d606e;
-  position: relative;
-  z-index: 2;
-  padding-top: 100px;
+footer {
+    background: #4d606e;
+    position: relative;
+    z-index: 2;
+    padding-top: 100px
 }
 
-footer h4{
-  font-family: 'Muli', sans-serif;
-  color: #f5f5f5;
+footer a {
+    font-family: Comfortaa, cursive;
+    font-weight: 300;
+    color: #3fbac2;
+    font-size: 40px
 }
 
-footer a{
-  font-family: 'Comfortaa', cursive;
-  font-weight: 300;
-  color: #3fbac2;
-  text-decoration: none;
-  font-size: 40px;
+.socialIcons2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 35% 100px
 }
 
-.socialIcons2{
-  display: flex;
-  flex-flow: row;
-  justify-content:space-around;
-  padding-left: 35%;
-  padding-right: 35%;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 100px;
+.socialIcons2 a img {
+    height: 30px
 }
 
-.socialIcons2 a img{
-  height: 30px;
+.email {
+    margin-top: 50px;
+    display: block
 }
 
-.email{
-  margin-top: 50px;
-  display: block;
+#___plusone_0 iframe {
+    visibility: hidden;
+    display: none
 }
 
+.minOver {
+    padding: 10px
+}
 
-
-
-/* ------------------------------------------------------------ END SECTION START--------------------------------*/
-
-
-
-/* Large Devices, Wide Screens */
-    @media only screen and (max-width : 5200px) {
-      .smallNav{
-        display: none;
-      }
-      .bigNav{
-        display: block;
-      }
+@media only screen and (max-width:5200px) {
+    .smallNav {
+        display: none
     }
-
-    @media only screen and (max-width : 1200px) {
-      .goToWork{
-        bottom: 50px;
-      }
-      .smallNav{
-        display: none;
-      }
-      .bigNav{
-        display: block;
-      }
+    .bigNav {
+        display: block
     }
+    .minOver {
+        display: none
+    }
+}
 
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-      .smallNav{
-        display: block;
-      }
-      .bigNav{
-        display: none;
-      }
+@media only screen and (max-width:1200px) {
+    .goToWork {
+        bottom: 50px
+    }
+    .smallNav {
+        display: none
+    }
+    .bigNav {
+        display: block
+    }
+    .minOver {
+        display: none
+    }
+}
 
-
-      video {
-        display: none;
-      }
-
-      .landingSection{
-        background-image: url('../img/background.jpg');
+@media only screen and (max-width:992px) {
+    .smallNav {
+        display: block
+    }
+    .bigNav,
+    video {
+        display: none
+    }
+    .workStuff:hover .overlay,
+    .workStuffBig:hover .overlay {
+        height: 0
+    }
+    .workStuff:hover .overlay section,
+    .workStuffBig:hover .overlay section {
+        color: transparent
+    }
+    .btn,
+    .workStuff:hover .overlayKert section,
+    .workStuffBig:hover .overlayChat section {
+        color: transprent
+    }
+    .landingSection {
+        background-image: url(../img/background-min.jpg);
         background-position: center;
-        background-size: cover;
-      }
-
-
-
-
-      .workSection{
+        background-size: cover
+    }
+    .workSection {
         width: 100%;
         display: flex;
-        flex-flow: column;
-      }
-      .left,.middle,.right{
+        flex-flow: column
+    }
+    .left,
+    .middle,
+    .right {
         background: red;
         width: 100%;
-        flex-flow: column;
-      }
-
-      .aboutText{
+        flex-flow: column
+    }
+    .aboutText {
         width: 100%;
         position: relative;
         padding-bottom: 100px;
-        padding-right: 10%;
-      }
-      .aboutImage{
-        display: none;
-
-      }
-
+        padding-right: 10%
     }
-
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
-      .smallNav{
+    .aboutImage {
+        display: none
+    }
+    .minOver {
         display: block;
-      }
-      .bigNav{
-        display: none;
-      }
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: rgba(0, 0, 0, .7);
+        color: #f5f5f5;
+        font-family: Muli, sans-serif;
+        text-align: center
     }
+}
 
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
-      .smallNav{
-        display: block;
-      }
-      .bigNav{
-        display: none;
-      }
+@media only screen and (max-width:768px) {
+    .smallNav {
+        display: block
     }
+    .bigNav {
+        display: none
+    }
+    .workStuff:hover .overlay,
+    .workStuffBig:hover .overlay {
+        height: 0
+    }
+    .workStuff:hover .overlay section,
+    .workStuffBig:hover .overlay section {
+        color: transparent
+    }
+    .btn,
+    .workStuff:hover .overlayKert section,
+    .workStuffBig:hover .overlayChat section {
+        color: transprent
+    }
+    .minOver {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: rgba(0, 0, 0, .7);
+        color: #f5f5f5;
+        font-family: Muli, sans-serif;
+        text-align: center
+    }
+}
 
-    /* Custom, iPhone Retina */
-    @media only screen and (max-width : 320px) {
-      .smallNav{
-        display: block;
-      }
-      .bigNav{
-        display: none;
-      }
+@media only screen and (max-width:480px) {
+    .smallNav {
+        display: block
     }
+    .bigNav {
+        display: none
+    }
+    .workStuff:hover .overlay,
+    .workStuffBig:hover .overlay {
+        height: 0
+    }
+    .workStuff:hover .overlay section,
+    .workStuffBig:hover .overlay section {
+        color: transparent
+    }
+    .btn,
+    .workStuff:hover .overlayKert section,
+    .workStuffBig:hover .overlayChat section {
+        color: transprent
+    }
+    .minOver {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: rgba(0, 0, 0, .7);
+        color: #f5f5f5;
+        font-family: Muli, sans-serif;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .smallNav {
+        display: block
+    }
+    .bigNav {
+        display: none
+    }
+    .workStuff:hover .overlay,
+    .workStuffBig:hover .overlay {
+        height: 0
+    }
+    .workStuff:hover .overlay section,
+    .workStuffBig:hover .overlay section {
+        color: transparent
+    }
+    .btn,
+    .workStuff:hover .overlayKert section,
+    .workStuffBig:hover .overlayChat section {
+        color: transprent
+    }
+    .minOver {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        background: rgba(0, 0, 0, .7);
+        color: #f5f5f5;
+        font-family: Muli, sans-serif;
+        text-align: center
+    }
+}
