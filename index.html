@@ -72,7 +72,7 @@
 
     <main>
       <section class="landingSection" id="landingSection">
-        <video poster="img/background.jpg" id="bgvid" playsinline autoplay muted loop>
+        <video poster="img/background.jpg" id="bgvid" playsinline autoplay muted loop controls="true">
             <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
           <source src="img/background.mp4" type="video/mp4">
         </video>
@@ -282,7 +282,7 @@
         <section class="inner-footer">
             
         <h5>Feel Free To Contact Me</h5>
-        <a class="email" href = "mailto:helloATbalduraDOTcom"
+        <a class="email" href = "mailto:baldurargesveinsATgmailDOTcom"
           onclick = "this.href=this.href
                       .replace(/AT/,'&#64;')
                       .replace(/DOT/,'&#46;')"
@@ -302,16 +302,9 @@
     </footer>
 
 
+    <script>
+        document.getElementById('bgvid').play();
+    </script>
 
-        <script>
-          function openNav() {
-            console.log("asdasd");
-              document.getElementById("myNav").style.height = "100%";
-          }
-
-          function closeNav() {
-              document.getElementById("myNav").style.height = "0%";
-          }
-        </script>
   </body>
 </html>
