@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico">
     <title>Baldur Arge</title>
-    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Megrim|Muli:200" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="js/type.js"></script>
     <script src="js/master.js"></script>
     <script src="https://use.fontawesome.com/4c6374cd72.js"></script>
 
@@ -27,10 +26,12 @@
       ga('send', 'pageview');
     </script>
 
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
   </head>
   <body>
 
-    <div id="myNav" class="overlay2">
+    <!--<div id="myNav" class="overlay2">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <a href="#" id="work2">Work</a>
@@ -38,24 +39,35 @@
         <a href="#" id="skills2">Skills</a>
         <a href="#" id="contact2">Contact</a>
       </div>
-    </div>
+    </div>-->
 
     <header>
       <nav class="bigNav">
         <ul>
-          <li class="brand" id="home"><a href="#" class="xLink">BA</a></li>
-          <li class="navLink" id="work"><a href="#" class="xLink">Work</a></li>
-          <li class="navLink" id="about"><a href="#" class="xLink">About</a></li>
-          <li class="navLink" id="skills"><a href="#" class="xLink">Skills</a></li>
-          <li class="navLink" id="contact"><a href="#" class="xLink">Contact</a></li>
+            <li class="brand" id="home"><a href="#" class="home-button link">BA</a></li>
         </ul>
+        <ul class="bigger-ul">
+          <li class="navLink" id="big-work"><a href="#" class="work-button link">Work</a></li>
+          <li class="navLink" id="big-about"><a href="#" class="about-button link">About</a></li>          
+          <li class="navLink" id="big-contact"><a href="#" class="contact-button link">Contact</a></li>
+        </ul>
+        <ul class="hamburger">
+            <li class="hamburger-icon"><i class="fa fa-bars" aria-hidden="true"></i></li>
+          </ul>
+        <ul class="smaller-ul">
+            <li class="hamburger-icon close-button"><i class="fa fa-close" aria-hidden="true"></i></li>            
+            <li class="navLink" id="small-work"><a href="#" class="xLink">Work</a></li>
+            <li class="navLink" id="small-about"><a href="#" class="xLink">About</a></li>          
+            <li class="navLink" id="small-contact"><a href="#" class="xLink">Contact</a></li>
+        </ul>
+
       </nav>
-      <nav class="smallNav">
+      <!--<nav class="smallNav">
         <ul>
           <li class="brand" id="home"><a href="#" class="xLink">BA</a></li>
           <li><a href="#" onclick="openNav()" class="xLink"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
         </ul>
-      </nav>
+      </nav>-->
     </header>
 
     <main>
@@ -66,7 +78,7 @@
         </video>
         <section class="text-center" id="1">
           <h1>Baldur Arge</h1>
-          <h2>Full Stack Developer</h2>
+          <h4>Frontend Developer</h4>
           <section class="socialIcons1">
             <a target="_blank" href="https://www.linkedin.com/in/baldur-arge-sveinsson-19978512a/"><img src="img/icons/WHITEsAsset 6.png" alt="LinkedIn Link"></a>
             <a target="_blank" href="https://www.behance.net/baldurargec048"><img src="img/icons/WHITEsAsset 5.png" alt="Behance Link"></a>
@@ -74,18 +86,78 @@
             <a target="_blank" href="https://github.com/baldurarge"><img src="img/icons/WHITEsAsset 2.png" alt="Github Link"></a>
           </section>
         </section>
-
-        <section class="goToWork text-center" id="2">
-          <div class="scroll-downs">
-            <div class="mousey">
-              <div class="scroller"></div>
-            </div>
-          </div>
-        </section>
-
       </section>
 
       <section class="workSection" id="workSection">
+      
+        <section class="each-work horsework">
+          <section>
+            <figure>
+                <img src="n_img/projects/ashestar.png" alt="Ashestar horserental website"/>                                  
+            </figure>
+          </section>
+          <section class="text">
+            <h2>ÁSHESTAR</h2>
+            <h5>Web Development & Design</h5>
+            <p>Design and development of a website for a horserental company in Iceland.</p>
+          </section>
+          <section>
+            <a target="_blank" class="work-btn" href="http://ashestar.com/">See the work</a>
+          </section>
+        </section>
+
+        <section class="each-work">
+            <section>
+              <figure>
+                  <img src="n_img/projects/mynt.png" alt="Ashestar horserental website"/>                  
+              </figure>
+            </section>
+            <section class="text">
+              <h3>Myntubreytir</h3>
+              <h5>Mobile Development & Design</h5>
+              <p>Mobile application that gathers live currency exchange rates, based on the internet connection on the mobile device.</p>
+            </section>
+            <section>
+              <a target="_blank" class="work-btn" href="https://itunes.apple.com/dk/app/simple-currency-calculator/id1317286552?mt=8">See the work</a>
+            </section>
+        </section>
+
+        <section class="each-work robotwork">
+          <section>
+            <figure>
+                <img src="n_img/projects/robot.png" alt="Android application Frodi"/>                
+            </figure>
+          </section>
+          <section class="text">
+            <h3>Robot Nordic</h3>
+            <h5>Co Design / Co Development - Bigsheep Studio</h5>
+            <p>Website redesign for robotnordic.dk.</p>
+          </section>
+          <section>
+            <a target="_blank" class="work-btn" href="http://robotnordic.dk/">See the work</a>
+          </section>
+        </section>
+
+        <section class="each-work feeba">
+            <section>
+              <figure>
+                  <img src="n_img/projects/feeba.png" alt="Android application Frodi"/>                
+              </figure>
+            </section>
+            <section class="text">
+              <h3>Feeba</h3>
+              <h5>Web Development - Bigsheep Studio</h5>
+              <p>Develpment of a redesign for Feeba.dk.</p>
+            </section>
+            <section>
+              <a target="_blank" class="work-btn" href="https://dev.feeba.dk/">See the work</a>
+            </section>
+          </section>
+
+
+
+
+        <!--
         <section class="left">
           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ionicframework.frodi239931&hl=en">
             <section class="frodo workStuff">
@@ -95,7 +167,7 @@
               <div class="overlay overlayFrodo">
                 <section class="text-center">
                   <h4>FRODO</h4>
-                  <span>Angular Mobile Applicaion</span>
+                  <span>Angular Mobile Application</span>
                 </section>
               </div>
               <div class="minOver">
@@ -181,6 +253,9 @@
         </a>
 
         </section>
+
+
+      -->
       </section>
 
 
@@ -191,37 +266,27 @@
             <p>I’m from Iceland, but currently live in Odense Denmark.
               My passion is web and application development and design,
               but I love mixing my interest into other areas of multimedia design.</p>
-              <section class="animationSection">
-                <h1>I</h1><h1 id="iCreate"></h1>
-              </section>
-
               <p>Coding languages that I am used to are HTML CSS, JavaScript JQuery, Angular4, PHP, C#, Python and have experience in a lot more.</p>
           </section>
-          <section class="aboutImage">
-            <section class="links">
-              <a target="_blank" href="https://www.linkedin.com/in/baldur-arge-sveinsson-19978512a/" class="btn">Li</a>
-              <a target="_blank" href="CV/CV.pdf" class="btn">CV</a>
-            </section>
-            <figure>
-              <img src="img/Profile-min.png" alt="Profile picture">
-            </figure>
-          </section>
-        </section>
-        <section class="insideSlanted">
-
         </section>
       </section>
 
     </main>
 
+    <section class="before-footer">
+
+    </section>
+
 
     <footer class="text-center" id="contactSection">
-        <h4>Feel Free To Contact Me</h4>
+        <section class="inner-footer">
+            
+        <h5>Feel Free To Contact Me</h5>
         <a class="email" href = "mailto:helloATbalduraDOTcom"
-   onclick = "this.href=this.href
-              .replace(/AT/,'&#64;')
-              .replace(/DOT/,'&#46;')"
->Email Me</a>
+          onclick = "this.href=this.href
+                      .replace(/AT/,'&#64;')
+                      .replace(/DOT/,'&#46;')"
+        >Email Me</a>
         <section class="socialIcons2">
           <a target="_blank" href="https://www.linkedin.com/in/baldur-arge-sveinsson-19978512a/"><img src="img/icons/WHITEsAsset 6.png" alt="LinkedIn Link"></a>
           <a target="_blank" href="https://www.behance.net/baldurargec048"><img src="img/icons/WHITEsAsset 5.png" alt="Behance Link"></a>
@@ -231,7 +296,9 @@
 
 
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <g:plusone class="googleButton"></g:plusone>
+
+
+        </section>
     </footer>
 
 

@@ -1,1 +1,150 @@
-var ready=!1,changeSize=function(o){o/=1.5,$(".workStuff").css("height",o),$(".workStuffBig").css("height",o+o)};$w=$(".workStuff").width(),ready=!0,changeSize($w),$(document).ready(function(){$(document).scroll(function(){$work=$("#workSection").offset().top,$doc=$(document).scrollTop(),$work-$doc<=650?($("#1").stop().fadeOut(),$("#2").stop().fadeOut()):($("#1").stop().fadeIn(),$("#2").stop().fadeIn()),$(document).scrollTop()>100?$("nav").addClass("navScroll"):$("nav").removeClass("navScroll")}),$("#home").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#landingSection").offset().top},500)}),$("#work").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#workSection").offset().top},500)}),$("#about").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#aboutSection").offset().top},500)}),$("#skills").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#aboutSection").offset().top},500)}),$("#contact").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#contactSection").offset().top},500)}),$("#work2").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#workSection").offset().top},500)}),$("#about2").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#aboutSection").offset().top},500)}),$("#skills2").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#aboutSection").offset().top},500)}),$("#contact2").click(function(){closeNav(),$("html, body").animate({scrollTop:$("#contactSection").offset().top},500)}),$(function(){$("#iCreate").typed({strings:[" create web and mobile applications."," design web and mobile applications."," create visual identity and motion graphics."," create photography and print media."],typeSpeed:20,loop:!0,showCursor:!1})}),$w=$(".workStuff").width(),ready=!0,changeSize($w)}),$(window).resize(function(){changeSize($(".workStuff").width())});
+$(function(){
+    var hasBeenTrigged = false;
+    var navTrigged = true;
+    var navOpened = false;
+    
+    var height = $(window).height();
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= height) { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
+            //console.log("You've scrolled down pixels.");
+            if(!hasBeenTrigged){
+                changeState(hasBeenTrigged);
+                hasBeenTrigged = true;                
+            }
+        }else{
+            if(hasBeenTrigged){
+                changeState(hasBeenTrigged);
+                hasBeenTrigged = false;      
+            }
+        }
+    });
+
+    $(function(){
+        $('nav').data('size','big');
+      });
+      
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 0)
+      {
+          if($('nav').data('size') == 'big')
+          {
+              $('nav').data('size','small');
+              $('nav').stop().animate({
+                  'padding-top':'0px'              
+              },200);
+              $('nav').css('background','#3b3b3b');
+          }
+      }
+      else
+        {
+          if($('nav').data('size') == 'small')
+            {
+              $('nav').data('size','big');
+              $('nav').stop().animate({
+                'padding-top':'40px'
+              },200);
+              $('nav').css('background','transparent');
+              
+            }  
+        }
+      });
+
+      $('.hamburger-icon').click(function(){
+        close();
+      });
+
+      $('#home').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#landingSection").offset().top
+        }, 1000);
+        return false;
+        });
+
+      $('#big-work').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#workSection").offset().top
+        }, 1000);
+        return false;
+        });
+
+
+      $('#big-about').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#aboutSection").offset().top
+        }, 1000);
+        return false;
+        });
+
+
+      $('#big-contact').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#contactSection").offset().top
+        }, 1000);
+        return false;
+        });
+
+        $('#home').click(function(){
+            $('html, body').animate({
+                scrollTop: $("#landingSection").offset().top
+            }, 1000);
+            return false;
+            });
+    
+          $('#small-work').click(function(){
+            close();
+            
+            $('html, body').animate({
+                scrollTop: $("#workSection").offset().top
+            }, 1000);
+            return false;
+            });
+    
+    
+          $('#small-about').click(function(){
+            close();
+            
+            $('html, body').animate({
+                scrollTop: $("#aboutSection").offset().top
+            }, 1000);
+            return false;
+            });
+    
+    
+          $('#small-contact').click(function(){
+            close();            
+            $('html, body').animate({
+                scrollTop: $("#contactSection").offset().top
+            }, 1000);
+            return false;
+            });
+      
+
+
+    var changeState = function(has){
+        if(has){
+            $('footer').css('z-index','0');            
+        }else{
+            $('footer').css('z-index','4');
+        }
+    }
+
+    var changeNav = function(has){
+        if(has){
+            console.log("TRUE");            
+            $('nav').css('padding-top','40px');            
+        }else{
+            console.log("NOT");
+            $('nav').css('padding-top','5px');            
+            
+        }
+    }
+
+    var close = function(){
+        if(navOpened){
+            $('.smaller-ul').css('left','100vw');
+        }else{
+            $('.smaller-ul').css('left','0');
+        }
+        navOpened = !navOpened;
+    }
+});

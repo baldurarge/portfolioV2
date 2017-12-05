@@ -1,0 +1,445 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400|Megrim|Muli:200';
+
+$logo: 'Megrim';
+$thinFont: 'Muli';
+$text1: 'Comfortaa';
+
+$white:#f8f8f8;
+$lightWhite: #ebeaf0;
+$black:#3b3b3b;
+$blackT:rgba(226, 226, 226, 0.671);
+$blue: #67A3D5;
+$darkblue: rgb(84, 134, 175);
+
+$yellow: #D5CA67;
+$purple: #515EB2;
+$orange: #DBE2EF;
+$green: #00B8A9;
+$darkgreen: rgb(1, 151, 139);
+
+
+$x7:70px;
+$x6:60px;
+$x5:50px;
+$x4:40px;
+$x3:35px;
+$x2:25px;
+$x1:20px;
+$x05:18px;
+
+
+
+$paddingSm:20px;
+$paddingMd:40px;
+$paddingLg:80px;
+
+
+.hamburger{
+    display: none;
+}
+
+h1{
+    font-size: $x7;
+    font-family: $text1;
+    font-weight: 200;
+}
+
+h2{
+    font-size: $x5;
+    font-family: $text1;
+    font-weight: 200;
+}
+h3{
+    font-size: $x4;
+    font-family: $thinFont;
+    font-weight: 200;
+}
+
+h4{
+    font-size: $x3;
+    font-family: $text1;
+    font-weight: 200;
+}
+
+h5{
+    font-size: $x1;
+    font-family: $text1;
+    font-weight: 200;
+}
+
+p{
+    font-size: $x1;
+    font-family: $thinFont;
+    font-weight: 200;    
+}
+
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin: 0px;
+}
+
+
+
+.work-btn{
+    border: 0px;
+    text-decoration: none;
+    color: $white;
+    font-family: $thinFont;
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 14;
+    nav{
+        padding-top: $paddingMd;
+        padding-left: $paddingLg;
+        padding-right: $paddingLg;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background: transparent;
+        transition: ease-in background 0.4s;
+        ul{
+            display: flex;
+            flex-flow: row;
+            list-style: none;
+            align-items: center;
+
+            li{
+                a{
+                    color: white;    
+                    text-decoration: none;   
+                    font-size: $x2;
+                    font-family: $thinFont;
+                }
+            }
+
+            .navLink{
+                margin-left:$paddingLg;
+            }
+            .brand{
+                a{
+                    font-family: $logo;
+                    font-size: $x7;
+                }
+            }
+        }
+
+        .hamburger{
+            color: $white;
+            font-size: $x3;
+        }
+
+        .smaller-ul{
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 12;
+            background: $black;
+            top:0;
+            left:100vw;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+            transition: all ease-in 0.3s;
+
+            .close-button{
+                position: absolute;
+                top:0;
+                right: 40px;
+                color: $white;
+                font-size: $x3;
+            }
+            li{
+                margin: 0px;
+                margin-top: $paddingMd;
+                margin-bottom: $paddingMd;
+            }
+        }
+    }
+}
+
+main{
+
+    .landingSection{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        
+
+        video{
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .text-center{
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+
+            h4{
+                margin-top: $paddingSm;
+            }
+        }
+
+        .socialIcons1{
+            margin-top: $paddingSm;
+            img{
+                height: $x3;
+                margin-left:$paddingSm;
+                margin-right:$paddingSm;
+                
+            }
+        }
+
+    }
+
+    .workSection{
+        background: $white;
+        position: relative;
+        z-index: 5;
+
+        .each-work{
+            background: $white;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+            padding-top: $paddingLg;
+            padding-bottom: $paddingMd;
+
+            .text{
+                width: 40vw;
+            }
+
+            img{
+                width: 45vw;
+            }
+
+            h5{
+                font-size: $x05;
+            }
+
+            h2{
+                margin-top: $paddingSm;
+            }
+
+            p{
+                margin-top: $paddingSm;
+            }
+
+            .work-btn{
+                display: inline-block;
+                margin-top: $paddingSm;
+                font-size: $x1;
+                background: $purple;
+                padding: 10px 15px 10px 15px;
+                border-radius: 3px;
+
+                -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.12);
+                -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.12);
+                box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.12);
+            }
+        }
+
+        .horsework{
+            background: $green;
+            color: $white;
+
+            h5{
+                color: $lightWhite;
+            }
+
+            .work-btn{
+                background: $darkblue;
+            }
+        }
+
+        .robotwork{
+            background: $orange;
+
+            .work-btn{
+                background: $yellow;
+            }
+        }
+
+        .feeba{
+            background: $darkblue;
+            color: $white;
+
+            .work-btn{
+                background: $green;
+            }
+        }
+    }
+
+
+}
+
+.about{
+    position: relative;
+    z-index: 10;
+    background: $white;
+    padding-top: $paddingLg;
+    padding-bottom: $paddingLg;
+    padding-left: 10vw;
+    .aboutText{
+        width: 45vw;
+        p{
+            margin-top: $paddingSm;
+        }
+    }
+}
+
+.before-footer{
+    height: 50vh;
+    width: 100vw;
+}
+
+footer{
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    left:0;
+    height: 50vh;
+    width:100vw;
+    background: $black;
+    color: $white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        color: $white;
+        text-decoration: none;
+        font-family: $text1;
+        color: $green;
+        font-size: $x4;
+        margin-top: $paddingSm;
+        display: inline-block;
+    }
+
+    .socialIcons2{
+
+        img{
+            height: $x2;
+            margin-left: $paddingSm;
+            margin-right: $paddingSm;
+            
+        }
+    }
+}
+
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+ @media only screen and (max-width : 1200px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .hamburger{
+        display: block;
+    }
+    .bigger-ul{
+        display: none;
+    }
+    .landingSection{
+        background-image: url('../img/background-min.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    video{
+        display: none;
+    }
+
+    main .workSection .each-work img, main .workSection .each-work .text {
+        width: 65vw;
+    }
+
+
+    .about{
+        .aboutText{
+            width: 75vw;
+
+        }
+    }
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    header nav ul .brand a {
+        font-size: 40px;
+    }
+    header nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    h2{
+        font-size: 34px;
+    }
+
+    h3{
+        font-size: 29px;
+    }
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 15px !important;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+
+    main .workSection .each-work img, main .workSection .each-work .text {
+        width: 85vw;
+    }
+
+
+    .about{
+        .aboutText{
+            width: 75vw;
+
+        }
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
