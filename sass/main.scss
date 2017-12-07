@@ -111,7 +111,7 @@ header{
 
             li{
                 a{
-                    color: white;    
+                    color: $black;    
                     text-decoration: none;   
                     font-size: $x2;
                     font-family: $thinFont;
@@ -171,18 +171,13 @@ main{
         width: 100vw;
         height: 100vh;
         position: relative;
-        z-index: 1;
+        z-index: 3;
         display: flex;
         justify-content: center;
-        
-
-        video{
-            position: absolute;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-        }
+        background-image: url('../img/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 
         .text-center{
             position: relative;
@@ -190,7 +185,7 @@ main{
             flex-flow: column;
             justify-content: center;
             align-items: center;
-            color: $white;
+            color: $black;
 
             h4{
                 margin-top: $paddingSm;
@@ -199,6 +194,9 @@ main{
 
         .socialIcons1{
             margin-top: $paddingSm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
                 height: $x3;
                 margin-left:$paddingSm;

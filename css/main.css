@@ -64,7 +64,7 @@ header {
       list-style: none;
       align-items: center; }
       header nav ul li a {
-        color: #3b3b3b;
+        color: white;
         text-decoration: none;
         font-size: 25px;
         font-family: "Muli"; }
@@ -100,83 +100,81 @@ header {
         margin-top: 40px;
         margin-bottom: 40px; }
 
-main .landingSection {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  background-image: url("../img/background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
-  main .landingSection .text-center {
+main {
+  background: red !important; }
+  main .landingSection {
+    width: 100vw;
+    height: 100vh;
     position: relative;
+    z-index: 3;
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    align-items: center;
-    color: #3b3b3b; }
-    main .landingSection .text-center h4 {
+    background-image: url("https://images.unsplash.com/photo-1489345745021-740d36bbda21?auto=format&fit=crop&w=1351&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    background-position: center;
+    background-size: cover; }
+    main .landingSection .text-center {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      color: #f8f8f8; }
+      main .landingSection .text-center h4 {
+        margin-top: 20px; }
+    main .landingSection .socialIcons1 {
       margin-top: 20px; }
-  main .landingSection .socialIcons1 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    main .landingSection .socialIcons1 img {
-      height: 35px;
-      margin-left: 20px;
-      margin-right: 20px; }
-main .workSection {
-  background: #f8f8f8;
-  position: relative;
-  z-index: 5; }
-  main .workSection .each-work {
+      main .landingSection .socialIcons1 img {
+        height: 35px;
+        margin-left: 20px;
+        margin-right: 20px; }
+  main .workSection {
     background: #f8f8f8;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 40px; }
-    main .workSection .each-work .text {
-      width: 40vw; }
-    main .workSection .each-work img {
-      width: 45vw; }
-    main .workSection .each-work h5 {
-      font-size: 18px; }
-    main .workSection .each-work h2 {
-      margin-top: 20px; }
-    main .workSection .each-work p {
-      margin-top: 20px; }
-    main .workSection .each-work .work-btn {
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 20px;
-      background: #515EB2;
-      padding: 10px 15px 10px 15px;
-      border-radius: 3px;
-      -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
-      -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
-      box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12); }
-  main .workSection .horsework {
-    background: #00B8A9;
-    color: #f8f8f8; }
-    main .workSection .horsework h5 {
-      color: #ebeaf0; }
-    main .workSection .horsework .work-btn {
-      background: #5486af; }
-  main .workSection .robotwork {
-    background: #DBE2EF; }
-    main .workSection .robotwork .work-btn {
-      background: #D5CA67; }
-  main .workSection .feeba {
-    background: #5486af;
-    color: #f8f8f8; }
-    main .workSection .feeba .work-btn {
-      background: #00B8A9; }
+    position: relative;
+    z-index: 5; }
+    main .workSection .each-work {
+      background: #f8f8f8;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 40px; }
+      main .workSection .each-work .text {
+        width: 40vw; }
+      main .workSection .each-work img {
+        width: 45vw; }
+      main .workSection .each-work h5 {
+        font-size: 18px; }
+      main .workSection .each-work h2 {
+        margin-top: 20px; }
+      main .workSection .each-work p {
+        margin-top: 20px; }
+      main .workSection .each-work .work-btn {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 20px;
+        background: #515EB2;
+        padding: 10px 15px 10px 15px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.12); }
+    main .workSection .horsework {
+      background: #00B8A9;
+      color: #f8f8f8; }
+      main .workSection .horsework h5 {
+        color: #ebeaf0; }
+      main .workSection .horsework .work-btn {
+        background: #5486af; }
+    main .workSection .robotwork {
+      background: #DBE2EF; }
+      main .workSection .robotwork .work-btn {
+        background: #D5CA67; }
+    main .workSection .feeba {
+      background: #5486af;
+      color: #f8f8f8; }
+      main .workSection .feeba .work-btn {
+        background: #00B8A9; }
 
 .about {
   position: relative;

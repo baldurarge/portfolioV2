@@ -33,6 +33,7 @@ $(function(){
                   'padding-top':'0px'              
               },200);
               $('nav').css('background','#3b3b3b');
+              $('nav a').css('color','#f8f8f8');
           }
       }
       else
@@ -44,6 +45,8 @@ $(function(){
                 'padding-top':'40px'
               },200);
               $('nav').css('background','transparent');
+              $('nav a').css('color','#3b3b3b');
+              
               
             }  
         }
