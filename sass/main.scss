@@ -146,6 +146,7 @@ header{
             flex-flow: column;
             justify-content: center;
             align-items: center;
+            color: $white !important;
 
             transition: all ease-in 0.3s;
 
@@ -174,10 +175,15 @@ main{
         z-index: 3;
         display: flex;
         justify-content: center;
-        background-image: url('../img/background.jpg');
+        background-image: url(../img/background-min.jpg);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        background-repeat: no-repeat;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        
 
         .text-center{
             position: relative;
@@ -387,6 +393,14 @@ footer{
 
         }
     }
+
+    main{
+        .landingSection{
+            background-attachment: scroll !important;
+            background-size: cover;
+        }
+
+        }
 
 
 }

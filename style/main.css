@@ -88,6 +88,7 @@ header {
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      color: #f8f8f8 !important;
       transition: all ease-in 0.3s; }
       header nav .smaller-ul .close-button {
         position: absolute;
@@ -107,10 +108,14 @@ main .landingSection {
   z-index: 3;
   display: flex;
   justify-content: center;
-  background-image: url("../img/background.jpg");
+  background-image: url(../img/background-min.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
   main .landingSection .text-center {
     position: relative;
     display: flex;
@@ -242,7 +247,11 @@ footer {
     width: 65vw; }
 
   .about .aboutText {
-    width: 75vw; } }
+    width: 75vw; }
+
+  main .landingSection {
+    background-attachment: scroll !important;
+    background-size: cover; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   header nav ul .brand a {
